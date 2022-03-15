@@ -7,12 +7,14 @@ export default function Footer(props) {
   };
 
   return (
-    <div className="footer">
+    <div className="footer border-t-[2px] border-solid border-[#eaecf3] h-20 flex flex-row items-center justify-around px-10">
       <ReactPaginate
-        containerClassName="pagination"
+        containerClassName="pagination flex flex-row items-center justify-center gap-4 w-full"
         pageLinkClassName="pagination-btn"
         activeLinkClassName="pagination-btn-active"
+        previousClassName="mr-auto"
         previousLinkClassName="navigation-btn"
+        nextClassName="ml-auto"
         nextLinkClassName="navigation-btn"
         disabledLinkClassName="navigation-btn-disabled"
         breakLabel="..."

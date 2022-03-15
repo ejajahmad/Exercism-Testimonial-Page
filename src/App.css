@@ -9,217 +9,27 @@
 }
 
 .header {
-  padding-inline: 2rem;
-  width: 100%;
-  height: 75px;
-  display: grid;
   grid-template-columns: auto 1fr 1fr;
-  align-items: center;
-}
-
-.searchbar {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.searchbar > input {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px 21px;
-  padding-left: 5rem;
-
-  width: 416px;
-  height: 48px;
-
-  background: #f0f3f9;
-  border-radius: 5px;
-
-  position: absolute;
-
-  border: none;
-  outline: none;
-}
-
-.track-selector {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5rem;
-  position: relative;
-  padding-right: 1rem;
-}
-
-.track-btn {
-  width: 42px;
-  height: 42px;
-}
-.track-dropdown-icon {
-  width: 13px;
-  height: 13px;
 }
 
 .track-dropdown {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 8px;
-
-  position: absolute;
-  top: 60px;
-
-  width: 376px;
-  height: 364px;
-
-  background: #ffffff;
-
   box-shadow: 0px 4px 42px rgba(79, 114, 205, 0.15);
-  border-radius: 8px;
-
-  z-index: 1;
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
 
 .track-dropdown .track {
-  text-align: left;
-  display: grid;
   grid-template-columns: 1fr 1fr 2fr 1fr;
-  align-items: center;
-  justify-items: flex-start;
-  gap: 1rem;
-  padding: 8px 20px;
-
-  min-width: 100%;
-  height: 58px;
-
-  background: #f0f3f9;
-}
-
-.track-dropdown .track > input {
-  /* Add if not using autoprefixer */
-  -webkit-appearance: none;
-  /* Remove most all native input styles */
-  appearance: none;
-  /* For iOS < 15 */
-  background-color: var(--form-background);
-  /* Not removed via appearance */
-  margin: 0;
-
-  font: inherit;
-  color: currentColor;
-  width: 1.5em;
-  height: 1.5em;
-  border: 2px solid #5c5589;
-  border-radius: 50%;
-  transform: translateY(-0.075em);
-
-  display: grid;
-  place-content: center;
 }
 
 .track-dropdown .track > input::before {
-  content: "";
-  width: 0.65em;
-  height: 0.65em;
-  border-radius: 50%;
-  transform: scale(0);
-  transition: 120ms transform ease-in-out;
   box-shadow: inset 1em 1em #3f3a5a;
-  /* Windows High Contrast Mode */
-  background-color: CanvasText;
-}
-
-.track-dropdown .track > input:checked::before {
-  transform: scale(1);
-}
-
-.track-dropdown .track .track-icon {
-  width: 42px;
-  height: 42px;
-  margin-right: 2rem;
-}
-
-.track-dropdown .track .track-count {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 3px 20px;
-
-  min-width: min-content;
-  height: 30px;
-
-  /* Dark / Text / Label Tertiary */
-
-  border: 1px solid #6a6781;
-  box-sizing: border-box;
-  border-radius: 100px;
-  margin-left: 2rem;
 }
 
 .searchbar > input:focus {
-  border: 1px solid #2e57e8;
-  box-sizing: border-box;
-  /* Active Input Glow */
-
   box-shadow: 0px 0px 2px 2px rgba(46, 87, 232, 0.25);
-  border-radius: 5px;
-}
-
-.searchbar-icon {
-  position: absolute;
-  left: 25px;
-}
-
-.filters {
-  justify-self: flex-end;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 21px;
-
-  width: 348px;
-  height: 48px;
-  position: relative;
-
-  /* Dark / Text / Label Default */
-
-  background: #f0f3f9;
-  border-radius: 5px;
 }
 
 .filter-dropdown {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 8px;
-
-  position: absolute;
-  top: 60px;
-  left: 0;
-
-  min-width: 348px;
-  height: max-content;
-
-  background: #ffffff;
-
   box-shadow: 0px 4px 42px rgba(79, 114, 205, 0.15);
-  border-radius: 8px;
-
-  z-index: 1;
-}
-
-.filter-dropdown ul {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
 
 .filter-dropdown button {
@@ -238,15 +48,6 @@
   background: #f0f3f9;
 }
 
-.testimonial-container {
-  height: 640px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  overflow: hidden;
-  position: relative;
-}
-
 .testimonial {
   font-size: 14px;
   border-top: 1px solid #eaecf3;
@@ -257,69 +58,6 @@
   grid-template-columns: 1fr 1fr 3fr 6fr 2fr 1fr;
   align-items: center;
   justify-items: flex-start;
-}
-
-.testimonial > div,
-h1,
-p {
-  padding-inline: 1rem;
-}
-
-.testimonial .user-profile .name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.testimonial .user-profile .excersice {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  /* identical to box height */
-
-  /* Light / Label Secondary */
-
-  color: #5c5589;
-}
-
-.testimonial .user-icon,
-.track-icon,
-.open-icon {
-  justify-self: center;
-  width: 40px;
-  border-radius: 50px;
-}
-
-.testimonial .track-icon {
-  width: 30px;
-}
-
-.testimonial .user-profile {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.testimonial:hover {
-  background: #f4f7fd;
-}
-
-.footer {
-  height: 75px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  border-top: 3px solid #eaecf3;
-}
-
-.pagination {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  width: 100%;
 }
 
 .pagination-btn {
@@ -341,11 +79,8 @@ p {
   flex-direction: row;
   align-items: center;
   padding: 8px 16px;
-
   width: 41px;
-
   background: #e1ebff;
-
   border: 1px solid #76709f;
   box-sizing: border-box;
   border-radius: 5px;
@@ -370,14 +105,8 @@ p {
   flex-direction: row;
   align-items: center;
   padding: 8px 16px;
-
   min-width: 85px;
   height: 40px;
-
   background: #e0e0ed;
   border-radius: 5px;
-}
-
-.hide-el {
-  display: none !important;
 }

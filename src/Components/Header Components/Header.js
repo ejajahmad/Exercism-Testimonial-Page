@@ -4,7 +4,7 @@ import Filters from "./Filter Components/Filters";
 
 export default function Header(props) {
   return (
-    <div className="header">
+    <div className="header w-full h-20 px-8 grid items-center">
       {/* Track Button */}
       <TrackSelector
         setIsDataLoaded={props.setIsDataLoaded}

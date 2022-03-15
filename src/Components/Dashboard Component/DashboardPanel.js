@@ -54,7 +54,7 @@ export default function DashboardPanel() {
   }, [page, searchKey, track, order]);
 
   return (
-    <div data-testid="dashboard-panel" className="dashboard-panel container bg-white rounded-lg">
+    <div className="dashboard-panel container bg-white rounded-lg">
       {/* Header Component */}
       <Header
         setIsDataLoaded={setIsDataLoaded}

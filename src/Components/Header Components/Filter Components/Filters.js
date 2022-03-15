@@ -11,7 +11,10 @@ export default function Filters(props) {
   };
 
   return (
-    <div className="filters" onClick={handleFilterDropdown}>
+    <div
+      className="filters flex flex-row justify-between items-center justify-self-end  h-12 relative bg-[#f0f3f9] rounded w-[348px] py-[12px] px-[21px]"
+      onClick={handleFilterDropdown}
+    >
       <p>{filterText}</p>
       <ArrowDown />
       {isFilterOpen ? <FilterDropdown setOrder={props.setOrder} setFilterText={setFilterText} /> : null}

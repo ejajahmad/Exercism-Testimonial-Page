@@ -30,10 +30,10 @@ export default function TrackSelector(props) {
   }, [isMenuOpen]);
 
   return (
-    <div className="track-selector">
-      <TrackSelectorIcon className="track-btn" onClick={handleTrackDropDown} />
+    <div className="track-selector flex flex-row items-center gap-2 relative pr-4">
+      <TrackSelectorIcon className="track-btn w-10 h-10" onClick={handleTrackDropDown} />
 
-      <DropdownIcon className="track-dropdown-icon" onClick={handleTrackDropDown} />
+      <DropdownIcon className="track-dropdown-icon w-3 h-3" onClick={handleTrackDropDown} />
 
       {isMenuOpen && trackTestimonial.length !== 0 ? (
         <TrackDropDown

@@ -18,7 +18,7 @@ export default function TestimonialContainer(props) {
   `;
 
   return (
-    <div className="testimonial-container">
+    <div className="testimonial-container h-[640px] min-w-[1376px] flex flex-col justify-start overflow-hidden relative">
       {props.isDataLoaded ? (
         props.testimonials.map((testimonial) => (
           <Testimonial
